@@ -10,9 +10,9 @@
         <text>Avalehele</text>
       </controlProperties>
     </control>
-    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="474" y="112" w="-1" h="-1" measuredW="124" measuredH="21" zOrder="2" locked="false" isInGroup="-1">
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="484" y="112" w="-1" h="-1" measuredW="233" measuredH="21" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Oled%20sisseloginud%20kui</text>
+        <text>Oled%20sisseloginud%20kui%20Joonas%20Papoonas.</text>
       </controlProperties>
     </control>
     <control controlID="3" controlTypeID="com.balsamiq.mockups::Canvas" x="145" y="217" w="172" h="236" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1">
@@ -42,18 +42,12 @@
         <text>h%E4%E4leta</text>
       </controlProperties>
     </control>
-    <control controlID="10" controlTypeID="com.balsamiq.mockups::Link" x="604" y="112" w="-1" h="-1" measuredW="113" measuredH="20" zOrder="10" locked="false" isInGroup="-1">
-      <controlProperties>
-        <size>14</size>
-        <text>Joonas%20Papoonas.</text>
-      </controlProperties>
-    </control>
-    <control controlID="11" controlTypeID="com.balsamiq.mockups::Button" x="638" y="136" w="-1" h="-1" measuredW="79" measuredH="27" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Button" x="638" y="136" w="-1" h="-1" measuredW="79" measuredH="27" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Logi%20v%E4lja</text>
       </controlProperties>
     </control>
-    <control controlID="12" controlTypeID="com.balsamiq.mockups::Label" x="374" y="346" w="-1" h="-1" measuredW="67" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Label" x="374" y="346" w="-1" h="-1" measuredW="67" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Mandaat%3A%204</text>
       </controlProperties>

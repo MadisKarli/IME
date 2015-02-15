@@ -10,7 +10,11 @@
         <backgroundAlpha>1</backgroundAlpha>
       </controlProperties>
     </control>
-    <control controlID="11" controlTypeID="com.balsamiq.mockups::Canvas" x="345" y="217" w="172" h="236" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Canvas" x="345" y="217" w="172" h="236" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+      </controlProperties>
+    </control>
     <control controlID="12" controlTypeID="com.balsamiq.mockups::Canvas" x="545" y="217" w="172" h="236" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1"/>
     <control controlID="13" controlTypeID="com.balsamiq.mockups::Label" x="180" y="325" w="-1" h="-1" measuredW="109" measuredH="21" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
@@ -22,7 +26,7 @@
         <text>Astu%20kandidaadiks</text>
       </controlProperties>
     </control>
-    <control controlID="15" controlTypeID="com.balsamiq.mockups::Label" x="578" y="325" w="-1" h="-1" measuredW="128" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Label" x="567" y="325" w="-1" h="-1" measuredW="128" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <text>H%E4%E4letamistulemused</text>
       </controlProperties>
@@ -60,6 +64,11 @@
     <control controlID="23" controlTypeID="com.balsamiq.mockups::Button" x="447" y="136" w="-1" h="-1" measuredW="73" measuredH="27" zOrder="13" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Mobiil-ID</text>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::Label" x="367" y="346" w="-1" h="-1" measuredW="128" measuredH="21" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>ainult%20sisseloginutele*</text>
       </controlProperties>
     </control>
   </controls>
