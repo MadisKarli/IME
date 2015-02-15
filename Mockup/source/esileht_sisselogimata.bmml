@@ -52,9 +52,14 @@
         <text>Avalehele</text>
       </controlProperties>
     </control>
-    <control controlID="22" controlTypeID="com.balsamiq.mockups::Label" x="455" y="139" w="-1" h="-1" measuredW="62" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::Label" x="379" y="139" w="-1" h="-1" measuredW="62" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Logi%20sisse%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::Button" x="447" y="136" w="-1" h="-1" measuredW="73" measuredH="27" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Mobiil-ID</text>
       </controlProperties>
     </control>
   </controls>
