@@ -21,7 +21,7 @@
         <text>Kandidaatide%20h%E4%E4lte%20jagunemine</text>
       </controlProperties>
     </control>
-    <control controlID="6" controlTypeID="com.balsamiq.mockups::StickyNote" x="636" y="75" w="109" h="241" measuredW="109" measuredH="123" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::StickyNote" x="639" y="184" w="109" h="241" measuredW="109" measuredH="123" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
         <text>valid%20kas%20ringkonna%20v%F5i%20kogu%20riigi%0A1%29Kogu%20Eesti%0A2%291%20-%20Tallinn%3A%20Haabersti%2C%20P%F5hja-Tallinna%20ja%20Kristiine%20%0A3%292%20-%20Tallinn%3A%20Kesklinna%2C%20Lasnam%E4e%20ja%20Pirita%0A...</text>
       </controlProperties>
@@ -56,9 +56,14 @@
         <text>Andmed%20on%20edastanud%20122%20jaoskonda%20122-st.</text>
       </controlProperties>
     </control>
-    <control controlID="16" controlTypeID="com.balsamiq.mockups::Arrow" x="444" y="116" w="192" h="10" measuredW="150" measuredH="100" zOrder="12" locked="false" isInGroup="-1">
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Arrow" x="448" y="125" w="191" h="86" measuredW="150" measuredH="100" zOrder="12" locked="false" isInGroup="-1">
       <controlProperties>
         <text/>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Label" x="516" y="112" w="-1" h="-1" measuredW="200" measuredH="21" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Oled%20sisseloginud%20kui/t%FChi%20kui%20pole</text>
       </controlProperties>
     </control>
   </controls>
