@@ -48,5 +48,10 @@
         <text>Joonas%20Papoonas.</text>
       </controlProperties>
     </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::Button" x="638" y="136" w="-1" h="-1" measuredW="79" measuredH="27" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Logi%20v%E4lja</text>
+      </controlProperties>
+    </control>
   </controls>
 </mockup>

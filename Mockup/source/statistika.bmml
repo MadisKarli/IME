@@ -1,11 +1,11 @@
-<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="757" measuredH="500" mockupW="755" mockupH="496">
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="756" measuredH="496" mockupW="755" mockupH="496">
   <controls>
-    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="2" y="4" w="755" h="496" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="1" y="0" w="755" h="496" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
         <text>e-h%E4%E4letamine%20//%20tulemused%0Ahttp%3A//</text>
       </controlProperties>
     </control>
-    <control controlID="1" controlTypeID="com.balsamiq.mockups::ComboBox" x="17" y="166" w="-1" h="-1" measuredW="100" measuredH="24" zOrder="1" locked="false" isInGroup="-1">
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::ComboBox" x="23" y="166" w="-1" h="-1" measuredW="100" measuredH="24" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
         <text>-Kogu%20Eesti</text>
       </controlProperties>
@@ -21,17 +21,17 @@
         <text>Kandidaatide%20h%E4%E4lte%20jagunemine</text>
       </controlProperties>
     </control>
-    <control controlID="6" controlTypeID="com.balsamiq.mockups::StickyNote" x="23" y="205" w="-1" h="-1" measuredW="109" measuredH="123" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::StickyNote" x="23" y="205" w="109" h="241" measuredW="109" measuredH="123" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>valid%20kas%20ringkonna%20v%F5i%20kogu%20riigi</text>
+        <text>valid%20kas%20ringkonna%20v%F5i%20kogu%20riigi%0A1%29Kogu%20Eesti%0A2%291%20-%20Tallinn%3A%20Haabersti%2C%20P%F5hja-Tallinna%20ja%20Kristiine%20%0A3%292%20-%20Tallinn%3A%20Kesklinna%2C%20Lasnam%E4e%20ja%20Pirita%0A...</text>
       </controlProperties>
     </control>
     <control controlID="7" controlTypeID="com.balsamiq.mockups::DataGrid" x="387" y="190" w="-1" h="-1" measuredW="260" measuredH="171" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Koht%20%5Ev%2C%20Nimi%20%5Ev%2C%20Partei%2C%20H%E4%E4li%20%20%5Ev%0A1%2C%20Savip%E4ts%2C%20REF%2C%2015000%0A2%2C%20Ansip%2C%20KESK%2C%2013000%0A3%2C%20Meikar%2C%20VABA%2C%20100%0A4%2C%20Rein%2C%20ISE%2C%2020%0A5%2C%20Andres%20Tarand%2C%20%DCKSIK%2C%201%0A%7B20L%2C%200R%2C%2035%2C%200C%7D</text>
+        <text>Koht%20%5Ev%2C%20Nimi%20%5Ev%2C%20Partei%2C%20H%E4%E4li%20%20%5Ev%0A1%2C%20Savip%E4ts%2C%20REF%2C%2015000%0A2%2C%20Ansip%2C%20KESK%2C%2013000%0A3%2C%20Meikar%2C%20VABA%2C%20100%0A4%2C%20Rein%2C%20ISE%2C%2020%0A5%2C%20Andres%20Tarand%2C%20%DCKSIK%2C%201%0A%7B20L%2C%200L%2C%2035%2C%200L%7D</text>
       </controlProperties>
     </control>
-    <control controlID="10" controlTypeID="com.balsamiq.mockups::SubTitle" x="90" y="124" w="-1" h="-1" measuredW="493" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::SubTitle" x="132" y="109" w="-1" h="-1" measuredW="493" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Andmed%20on%20edastanud%20122%20jaoskonda%20122-st.</text>
       </controlProperties>
@@ -43,7 +43,12 @@
     </control>
     <control controlID="12" controlTypeID="com.balsamiq.mockups::StickyNote" x="647" y="217" w="109" h="214" measuredW="109" measuredH="123" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Partei%20peale%20vajutades%20avaneb%20rippmen%FC%FC%2C%20kust%20saad%20valida%20parteisisese%20h%E4%E4ltejaotuse</text>
+        <text>Partei%20tulba%20peale%20vajutades%20avaneb%20rippmen%FC%FC%2C%20kust%20saad%20valida%20parteisisese%20h%E4%E4ltejaotuse</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Button" x="23" y="109" w="-1" h="-1" measuredW="77" measuredH="27" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Avalehele</text>
       </controlProperties>
     </control>
   </controls>
