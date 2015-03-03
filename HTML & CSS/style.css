@@ -13,10 +13,10 @@ p{
 #login{
 	position:fixed;
 	right: 0px;
-	text-align: "right";
+	text-align:right;
 }
 #plakatid{
-	position: relative;
+	position: absolute;
 	top:50%;
 	left:10%;
 	width:70%;
