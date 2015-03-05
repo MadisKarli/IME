@@ -9,7 +9,7 @@
     <p id = "avalehtnupp"><a href = "index.html">avaleht</a></p>
     <p id = "login">Logi sisse: valik1, valik2, valik3</p>
   </div>
-  <div id = "plakatid">
+  <div id = "raam2">
      <p>
       <?php
         include_once  'funktsioonid.php';

@@ -11,27 +11,25 @@
     <p id = "login">Logi sisse: valik1, valik2, valik3</p>
   </div>
   <div id = "plakatid">
-      Nimi: 
-      <br>Katsealune nr1<br>
-      Piirkond:
-      <form method="get" action="http://www.yourwebskills.com/files/examples/process.php">
-        <select id="piirkond" name="piirkond">
+      <?php
+          include_once  'funktsioonid.php';
+          $conn = connectAndBegin();
+      ?>
+     <form action="kandideeriserver.php" method="get">
+Eesnimi: <input type="text" name="eesnimi"><br>
+Perenimi: <input type="text" name="perenimi"><br>
+Piirkond: <select id="piirkond" name="piirkond">
         <?php
-            include_once  'funktsioonid.php';
-            $conn = connectAndBegin();
-            getPiirkond($conn);
+        getPiirkond($conn);
         ?>
-        </select>
-      </form>
-
-    Partei:
-    <form method="get" action="http://www.yourwebskills.com/files/examples/process.php">
-      <select id="partei" name="partei">
+ </select><br>
+Erakond: <select id="partei" name="partei">
       <?php
         getErakond($conn);
-        $conn->close();
+        //$conn->close();
       ?>
-      </select>
+      </select><br>
+<input type="submit" value="Kandideeri!">
     </form>
   </div>
 </body>

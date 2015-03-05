@@ -20,7 +20,7 @@ function getStatistics($conn){
           die( print_r( sqlsrv_errors(), true) );
         }
         while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
-          echo "nimi: ".$row['perenimi'].", ".$row['eesnimi'].", hääli: ".$row['haali'].", erakond: ".$row['nimi'].", piirkond: ".$row['pnimi']."<br>";
+          echo "nimi: ".$row['perenimi'].", ".$row['eesnimi']." | hääli: ".$row['haali']." | erakond: ".$row['nimi']." | piirkond: ".$row['pnimi']."<br>";
         }
         sqlsrv_free_stmt( $stmt);
 }
@@ -48,4 +48,40 @@ function getErakond($conn){
         }
         sqlsrv_free_stmt( $stmt);
 }
+function kandideeri($eesnimi, $perenimi, $piirkonnanimi, $parteinimi){
+          $conn = connectAndBegin();
+//parteiID
+          $sql = "SELECT id FROM partei where nimi = '{$parteinimi}'";
+          $stmt = sqlsrv_query( $conn, $sql );
+          if( $stmt === false) {
+            die( print_r( sqlsrv_errors(), true) );
+            }
+          $lst1 = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC);
+          $erakonnaID = $lst1["id"];
+
+          
+//piirkonnaID
+          $sql = "SELECT id FROM piirkond where pnimi = '{$piirkonnanimi}'";
+          $stmt = sqlsrv_query( $conn, $sql );
+          if( $stmt === false) {
+            die( print_r( sqlsrv_errors(), true) );
+            }
+          $lst2 = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC);
+          $piirkonnaID = $lst2["id"];
+
+
+//commit
+          $sql = "INSERT INTO kandidaat VALUES (?, ?, ?, ?, ?)";
+          $params = array( $eesnimi, $perenimi, 0, $erakonnaID, $piirkonnaID);
+          $stmt = sqlsrv_query( $conn, $sql, $params );
+          if( $stmt) {
+            sqlsrv_commit( $conn );
+            echo "Kandideeritud!<br />";
+          } else {
+            sqlsrv_rollback( $conn );
+            echo "Midagi läks valesti :(<br />";
+        }
+        $conn->close();
+}
+
 ?>
