@@ -10,8 +10,14 @@
     <p id = "login">Logi sisse: valik1, valik2, valik3</p>
   </div>
   <div id = "plakatid">
-     <p>Siia tuleb statistika<br>
-     <a href="http://imeprojekt.azurewebsites.net/statistika.php">WIP</a></p>
+     <p>
+      <?php
+        include_once  'funktsioonid.php';
+        $conn = connectAndBegin();
+        getStatistics($conn);
+        $conn->close();
+      ?>
+     </p>
   </div>
   </body>
 </html>
