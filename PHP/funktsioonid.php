@@ -14,13 +14,28 @@ function connectAndBegin()
         return $conn;
 }
 function getStatistics($conn){
-        $sql = "SELECT eesnimi, perenimi, haali, partei.nimi, piirkond.pnimi FROM kandidaat JOIN partei ON kandidaat.erakond = partei.id JOIN piirkond ON piirkond.id = kandidaat.piirkond";
+//leiame kandidatuurid
+//JOIN
+        $sql = "SELECT eesnimi, perenimi, haali, partei.nimi, piirkond.pnimi FROM kandidaat JOIN partei ON kandidaat.erakond = partei.id JOIN piirkond ON piirkond.id = kandidaat.piirkond ORDER BY perenimi, eesnimi asc";
         $stmt = sqlsrv_query( $conn, $sql );
         if( $stmt === false) {
           die( print_r( sqlsrv_errors(), true) );
         }
         while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
           echo "nimi: ".$row['perenimi'].", ".$row['eesnimi']." | hääli: ".$row['haali']." | erakond: ".$row['nimi']." | piirkond: ".$row['pnimi']."<br>";
+        }
+        sqlsrv_free_stmt( $stmt);
+//GROUP BY      
+        echo "<br>"."Erakondade kandidaatide arv"."<br>"."<br>";
+
+        $sql = "SELECT partei.nimi, COUNT(erakond) AS kandidaate FROM kandidaat join partei on kandidaat.erakond = partei.id
+GROUP BY partei.nimi, partei.nimi ORDER BY kandidaate desc";
+        $stmt = sqlsrv_query( $conn, $sql );
+        if( $stmt === false) {
+          die( print_r( sqlsrv_errors(), true) );
+        }
+        while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
+          echo "erakond: ".$row['nimi']." |   kandidaate: ".$row['kandidaate']."<br>";
         }
         sqlsrv_free_stmt( $stmt);
 }
