@@ -26,10 +26,10 @@ function getStatistics($conn){
         }
         sqlsrv_free_stmt( $stmt);
 //GROUP BY      
-        echo "<br>"."Erakondade kandidaatide arv"."<br>"."<br>";
+        echo "<br>"."Erakondade kandidaatide arv"."<br><br>";
 
         $sql = "SELECT partei.nimi, COUNT(erakond) AS kandidaate FROM kandidaat join partei on kandidaat.erakond = partei.id
-GROUP BY partei.nimi, partei.nimi ORDER BY kandidaate desc";
+GROUP BY partei.nimi ORDER BY kandidaate desc";
         $stmt = sqlsrv_query( $conn, $sql );
         if( $stmt === false) {
           die( print_r( sqlsrv_errors(), true) );
@@ -65,6 +65,10 @@ function getErakond($conn){
 }
 function kandideeri($eesnimi, $perenimi, $piirkonnanimi, $parteinimi){
           $conn = connectAndBegin();
+          echo "Eesnimi: ".$eesnimi."<br>";
+          echo "Perenimi: ".$perenimi."<br>";
+          echo "Piirkond: ".$piirkonnanimi."<br>";
+          echo "Partei:".$parteinimi."<br><br><br>";
 //parteiID
           $sql = "SELECT id FROM partei where nimi = '{$parteinimi}'";
           $stmt = sqlsrv_query( $conn, $sql );
