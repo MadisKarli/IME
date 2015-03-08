@@ -19,6 +19,20 @@ nimi varchar(100) unique not null
 
 insert into partei values ('Reformierakond')
 insert into partei values ('Keskerakond')
+insert into partei values ('IRL')
+insert into partei values ('SDE')
+insert into partei values ('EKRE')
+insert into partei values ('RÜE')
+insert into partei values ('Vabaerakond')
 
-insert into piirkond values ('Jõgeva- ja Tartumaa')
-insert into piirkond values ('Tartu linn')
+
+insert into piirkond values ('1 - Tallinn')
+insert into piirkond values ('2 - Harju- ja Raplamaa')
+insert into piirkond values ('3 - Läänemaa ja saared')
+insert into piirkond values ('4 - Lääne-Virumaa')
+insert into piirkond values ('5 - Parim-Virumaa')
+insert into piirkond values ('6 - Järva- ja Viljandimaa')
+insert into piirkond values ('7 - Jõgeva- ja Tartumaa')
+insert into piirkond values ('8 - Tartu linn')
+insert into piirkond values ('9 - Kagu-Eesti')
+insert into piirkond values ('10 - Pärnumaa')

@@ -14,7 +14,7 @@
          <p>
           <?php
             include_once  'funktsioonid.php';
-            kandideeri($_GET["eesnimi"], $_GET["perenimi"], $_GET["piirkond"], $_GET["partei"]);
+            kandideeri($_POST["eesnimi"], $_POST["perenimi"], $_POST["piirkond"], $_POST["partei"]);
           ?>
          </p>
       </div>

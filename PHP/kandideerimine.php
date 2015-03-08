@@ -15,7 +15,7 @@
               include_once  'funktsioonid.php';
               $conn = connectAndBegin();
           ?>
-         <form action="kandideeriserver.php" method="get">
+         <form action="kandideeriserver.php" method="post">
             Eesnimi: <input type="text" name="eesnimi"><br>
             Perenimi: <input type="text" name="perenimi"><br>
 
