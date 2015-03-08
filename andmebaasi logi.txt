@@ -1,0 +1,24 @@
+CREATE TABLE kandidaat (
+id int primary key identity(1,1),
+eesnimi varchar(30) not null,
+perenimi varchar(100) not null,
+hääli int,
+erakond int,
+piirkond int,
+);
+
+CREATE TABLE piirkond (
+id int primary key identity(1,1),
+nimi varchar(100) unique not null
+);
+
+CREATE TABLE partei (
+id int primary key identity(1,1),
+nimi varchar(100) unique not null
+);
+
+insert into partei values ('Reformierakond')
+insert into partei values ('Keskerakond')
+
+insert into piirkond values ('Jõgeva- ja Tartumaa')
+insert into piirkond values ('Tartu linn')
