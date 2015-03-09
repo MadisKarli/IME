@@ -11,12 +11,22 @@ a{
 }
 #avalehtnupp{
 	position:fixed;
-	left:0px;
+	left:5px;
 }
 #login{
 	position:fixed;
-	right: 0px;
+	right: 10px;
 	text-align:right;
+}
+#logout{
+    position: fixed;
+    bottom: 5px;
+    right:  5px;
+    float: left;
+    font-size: medium;
+    text-align: right;
+    font-weight: bold;
+    
 }
 #plakatid{
 	position: fixed;

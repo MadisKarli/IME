@@ -8,7 +8,9 @@
   <body>
   <div id = "top">
     <p id = "avalehtnupp"><a href = "index.html">avaleht</a></p>
-    <p id = "login">Logi sisse: valik1, valik2, valik3</p>
+    <p id = "login">Logi sisse: <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button></p>
+          <script src="autentimine.js"></script>
   </div>
   <div id = "raam1">
 	   <p id = "kandideerimine">Kandideerimiseks pead olema sisse logitud.</p>

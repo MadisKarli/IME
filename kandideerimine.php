@@ -8,9 +8,13 @@
     <body>
       <div id = "top">
         <p id = "avalehtnupp"><a href = "index.html">avaleht</a></p>
-        <p id = "login">Logi sisse: valik1, valik2, valik3</p>
+        <p id = "login">Logi sisse: <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+            </fb:login-button></p>
+        <a id="logout" onclick="FB.logout(function() { document.location.reload(); });"></a>
+        <script src="autentimine.js"></script>
       </div>
       <div id = "plakatid">
+          <script src="kasautentitud.js"></script>
           <?php
               include_once  'funktsioonid.php';
               $conn = connectAndBegin();
