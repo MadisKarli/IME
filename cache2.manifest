@@ -1,0 +1,9 @@
+CACHE MANIFEST
+# rev 1
+CACHE:
+style.css
+kandideerimine.html
+FALLBACK:
+kandideerimine.html
+NETWORK:
+*

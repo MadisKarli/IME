@@ -25,15 +25,10 @@
   }
 
     function sisselogitud() {
-        FB.api('/me', function (response) {
-            if (document.getElementById('plakatid').innerHTML == 'Kandideerimiseks pead olema sisse logitud. ') {
-                document.location.reload();
-            }
-            document.getElementById('login').innerHTML =
+    FB.api('/me', function(response) {
+      document.getElementById('login').innerHTML =
         'Oled sisenenud kui ' + response.name + '.     ';
-            document.kandideerimisform.eesnimi.value = response.first_name;
-            document.kandideerimisform.perenimi.value = response.last_name;
-            document.getElementById('logout').innerHTML =
+        document.getElementById('logout').innerHTML =
         'Logi välja!';
-        });
+    });
   }

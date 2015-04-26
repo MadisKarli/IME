@@ -19,11 +19,9 @@
               include_once  'funktsioonid.php';
               $conn = connectAndBegin();
           ?>
-         <form name="kandideerimisform" action="kandideeriserver.php" method="post">
-            Eesnimi: <input type="text" name="eesnimi" readonly><br>
-            <div id="perenimi">
-            Perenimi: <input type="text" name="perenimi" readonly><br>
-            </div>
+         <form action="kandideeriserver.php" method="post">
+            Eesnimi: <input type="text" name="eesnimi"><br>
+            Perenimi: <input type="text" name="perenimi"><br>
 
             Piirkond: <select id="piirkond" name="piirkond">
                         <?php
