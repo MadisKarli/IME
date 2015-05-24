@@ -28,6 +28,12 @@ a{
     font-weight: bold;
     
 }
+#countdown{
+    position:  fixed;
+    top: 5%;
+    left: 50%;
+    text-align: center;
+}
 #plakatid{
 	position: fixed;
 	top:10%;

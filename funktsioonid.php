@@ -64,6 +64,9 @@ function getErakond($conn){
         sqlsrv_free_stmt( $stmt);
 }
 function kandideeri($eesnimi, $perenimi, $piirkonnanimi, $parteinimi){
+          if($eesnimi == "" || $perenimi == ""){
+              echo "Kandideerimiseks on vajalikud mõlemad nimed";
+          }else{
           $conn = connectAndBegin();
           echo "Eesnimi: ".$eesnimi."<br>";
           echo "Perenimi: ".$perenimi."<br>";
@@ -101,6 +104,7 @@ function kandideeri($eesnimi, $perenimi, $piirkonnanimi, $parteinimi){
             echo "Midagi läks valesti :(<br />";
         }
         $conn->close();
+       }
 }
 
 ?>
